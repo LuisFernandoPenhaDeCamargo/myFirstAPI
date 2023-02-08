@@ -1,0 +1,19 @@
+{
+  "name": "myFirstAPI",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/LuisFernandoPenhaDeCamargo/myFirstAPI",
+  "author": "Luis Fernando Penha de Camargo <luisfernandopenhadecamargo@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "sucrase ./src -d ./dist --transforms imports",
+    "start": "node dist/server.js",
+    "2ScriptsEm1": "sucrase ./src -d ./dist -- transforms imports && node dist/server.js"
+  },
+  "devDependencies": {
+    "sucrase": "^3.29.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
