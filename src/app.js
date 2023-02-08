@@ -10,7 +10,7 @@ app.get("/nomeDaRota", (request, response) => {
   if (nome == "William") {
     return response.status(200).json({ mensagem: "Meu tutor." });
   }
-  response
+  return response
     .status(200)
     .json({ mensagem: "Resposta retornada ao usuário da API." });
 });
@@ -23,7 +23,7 @@ app.post("/outraRota", function (request, response) {
   if (nome == "Lucas") {
     return response.status(200).json({ mensagem });
   }
-  response.status(200).json({
+  return response.status(200).json({
     mensagem:
       "Resposta retornada ao usuário da API utilizando outra forma de se declarar uma função.",
   });
